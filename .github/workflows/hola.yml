@@ -1,0 +1,18 @@
+name: Mi primer action
+
+# Ejecuta este workflow cada vez que se suba un nuevo commit al repositorio
+on: push
+
+jobs:
+  # Establece la llave de tabajo. Esta llave es mostrada como el
+  # nombre del trabajo cuando el nombre del trabajo no se proporciona
+  primer-trabajo:
+    # Nombre del trabajo
+    name: Mi primera Prueba
+    # Configura el tipo de máquina en la que se va a ejecutar
+    runs-on: ubuntu-latest
+
+    steps:
+      # Ejecuta un Hola mundo
+      - name: Imprimir un mensaje
+        run: echo Hola mundo
